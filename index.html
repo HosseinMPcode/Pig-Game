@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pig Game</title>
+</head>
+<body>
+    <div class="gameContainer">
+        <div class="boardPlayer1">
+            <h1 class="m50top">PLAYER 1</h1>
+            <h1 class="playerScore1 playerScore">0</h1>
+            <div class="currentScoreContainer">
+                <h4>CURRENT</h4>
+                <h1 class="player1currentScore">0</h1>
+            </div>
+        </div>
+        <div class="playBoard">
+            <button class="btn newGmeBtn">🔃 NEW GAME</button>
+
+            <div class="diceImageContainer">
+                <img src="images/dice-1.png" class="diceImg">
+            </div>
+            <button class="btn rollDiceBtn">🎲 ROLL DICE</button>
+            <button class="btn holdBtn">📤 HOLD</button>
+        </div>
+        <div class="boardPlayer2">
+            <h1 class="m50top">PLAYER 2</h1>
+            <h1 class="playerScore2 playerScore">0</h1>
+            <div class="currentScoreContainer">
+                <h4>CURRENT</h4>
+                <h1 class="player2currentScore">0</h1>
+            </div>
+        </div>
+    </div>
+    <div class="winsModal hidden">
+        <h1><span class="winsModalPlayer">PLAYER 1 </span>WINS🎉</h1>
+        <p class="m10Y gameStatus">100 to 100</p>
+        <button class="btn newGmeBtn" style="border: 1px solid gray;">PLAY AGAIN 🔃</button>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

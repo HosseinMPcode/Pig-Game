@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+}
+body{
+    /* height: 100vh; */
+    /* background: rgb(108,49,117);
+    background: -moz-linear-gradient(320deg, rgba(108,49,117,1) 0%, rgba(4,255,113,1) 100%);
+    background: -webkit-linear-gradient(320deg, rgba(108,49,117,1) 0%, rgba(4,255,113,1) 100%);
+    background: linear-gradient(320deg, rgba(108,49,117,1) 0%, rgba(4,255,113,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c3175",endColorstr="#04ff71",GradientType=1); */
+    background: rgb(108,49,117);
+    background: -moz-linear-gradient(338deg, rgba(108,49,117,1) 0%, rgba(177,42,48,1) 100%);
+    background: -webkit-linear-gradient(338deg, rgba(108,49,117,1) 0%, rgba(177,42,48,1) 100%);
+    background: linear-gradient(338deg, rgba(108,49,117,1) 0%, rgba(177,42,48,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c3175",endColorstr="#b12a30",GradientType=1);
+    background-attachment: fixed;
+}
+.gameContainer{
+    background: linear-gradient(to right, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.3)  50%);
+    margin:100px auto;
+    max-width: 750px;
+    height: 400px;
+    display: flex;
+}
+/* Player board */
+.boardPlayer1{
+    width: 40%;
+    background-color: inherit;
+    text-align: center;
+}
+.boardPlayer2{
+    width: 40%;
+    background-color: inherit;
+    text-align: center;
+}
+.playerScore{
+    font-size: 60px;
+    margin: 10px 0 90px;
+}
+.currentScoreContainer{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    color: #fff;
+    background-color: #bf2f57;
+}
+
+/* play Board */
+.playBoard{
+    width: 20%;
+    text-align: center;
+}
+.diceImg{
+    width: 70%;
+}
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+.newGmeBtn{
+    margin: 30px 0;
+}
+.rollDiceBtn{
+    margin:70px 0 10px;
+}
+/* Wins modal */
+.winsModal{
+    background-color: #fff;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.winsModalPlayer{
+    color: red;
+}
+.overlay {
+    position: fixed;  /* Makes the element stay in place regardless of scrolling */
+    top: 0;  /* Positions the top edge to the top of the viewport */
+    left: 0;  /* Positions the left edge to the left of the viewport */
+    width: 100%;  /* Stretches the element to cover the entire width */
+    height: 100%;  /* Stretches the element to cover the entire height */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background */
+    backdrop-filter: blur(5px);  /* Applies the blur effect */
+}
+.hidden{
+    display: none;
+}
+/* Other settings */
+.m50top{
+    margin-top: 50px;
+}
+.m40Y{
+    margin: 40px 0;
+}
+.m10Y{
+    margin: 10px 0;
+}
