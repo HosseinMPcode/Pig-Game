@@ -28,6 +28,7 @@ body{
     max-width: 750px;
     height: 400px;
     display: flex;
+    border-radius: 10px;
 }
 /* Player board */
 .boardPlayer1{
